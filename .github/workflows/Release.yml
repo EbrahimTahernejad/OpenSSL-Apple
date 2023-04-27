@@ -56,7 +56,7 @@ jobs:
           echo "  targets: [" >> Package.swift
           echo "    .binaryTarget(" >> Package.swift
           echo "      name: \"OpenSSL\"," >> Package.swift
-          echo "      url: \"https://github.com/EbrahimTahernejad/OpenSSL-iOS/releases/download/${{ github.event.inputs.version }}/OpenSSL.xcframework.zip\"," >> Package.swift
+          echo "      url: \"https://github.com/EbrahimTahernejad/OpenSSL-Apple/releases/download/${{ github.event.inputs.version }}/OpenSSL.xcframework.zip\"," >> Package.swift
           echo "      checksum: \"${{ env.FILE_CHECKSUM }}\"" >> Package.swift
           echo "    )" >> Package.swift
           echo "  ]" >> Package.swift
